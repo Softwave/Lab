@@ -57,7 +57,7 @@ function init()
 
         sphere.position.z = i;
 
-        sphere.scale.x = sphere.scale.y = 2;
+        sphere.scale.x = sphere.scale.y = 4;
 
         scene.add(sphere);
         stars.push(sphere);
