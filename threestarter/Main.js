@@ -32,8 +32,10 @@ function init()
     camera.position.z = 80;
 
     // Geometry and Material
-    var geometry = new THREE.OctahedronGeometry(10, 2);
-    var material = new THREE.MeshNormalMaterial();
+    var geometry = new THREE.OctahedronGeometry(10, 1);
+    var material = new THREE.MeshNormalMaterial({
+        wireframe: true
+    });
     // Add the mesh
     mesh = new THREE.Mesh(geometry, material);
     // Add to scene 
